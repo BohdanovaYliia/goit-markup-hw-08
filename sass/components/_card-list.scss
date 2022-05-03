@@ -1,0 +1,24 @@
+.card-list {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * #{$card-set-gap});
+        margin-top: calc(-1 * #{$card-set-gap});
+    }
+    
+}
+
+.card-list__item {
+    flex-basis: 100%;
+    margin-top: $card-set-gap;
+
+    @media screen and (min-width:768px) {
+        flex-basis: calc(100% / 2 - #{$card-set-gap});
+        margin-left: $card-set-gap;
+    }
+    
+    @media screen and (min-width:1200px) {
+        flex-basis: calc(100% / 3 - #{$card-set-gap});
+    }
+}

@@ -1,0 +1,59 @@
+/* стили подвала */
+.page-footer {
+    background-color: $secondary-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.page-footer__logo {
+    color: $primary-white-color;
+    padding: 0;
+}
+
+.footer-blocks {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    
+}
+
+.contacts-block {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 61px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-grow: 1;
+    }
+}
+
+.footer-networks {
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+}
+
+.footer-subtitle {
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+

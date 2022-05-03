@@ -1,0 +1,28 @@
+.logo {
+    color: $title-text-color;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    transition: color $transition-duration $transition-timing-function;
+
+    &__accent,
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+ 
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}

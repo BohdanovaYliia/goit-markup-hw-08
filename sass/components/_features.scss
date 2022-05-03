@@ -1,0 +1,57 @@
+/* стили особенностей Студии */
+.features-list {
+    margin-top: calc(-1 * #{$card-set-gap});
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * #{$card-set-gap});
+    }
+}
+
+.features-list__item {
+    flex-basis: 100%;
+    margin-top: $card-set-gap;
+    
+
+    @media screen and (min-width:768px) {
+        flex-basis: calc(100% / 2 - #{$card-set-gap});
+        margin-left: $card-set-gap;
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-basis: calc(100% / 4 - #{$card-set-gap});
+    }
+}
+    
+.features-list__icon-box {
+    @include centered-flex ();
+
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: $other-bg-color;
+    border-radius: 4px;
+}
+
+.features-list__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
+}
+
+.features-list__text {
+    letter-spacing: 0.03em;
+}
+
+    
