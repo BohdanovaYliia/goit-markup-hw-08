@@ -24,6 +24,7 @@
     top: 0;
     left: 0;
     overflow-y: scroll;
+    z-index: 2;
     width: 100%;
     height: 100%;
     padding: 48px 40px;
@@ -42,7 +43,7 @@
 
 .menu-btn {
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     top: 10px;
     right: 15px;
 
@@ -65,6 +66,7 @@
         fill: $accent-color;
     }
 }
+
 
 .menu-btn__icon-cross {
     display: none;
