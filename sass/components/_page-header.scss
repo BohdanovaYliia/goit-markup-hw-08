@@ -6,7 +6,7 @@
     border-bottom-color: $border-color;
 }
 
-.page-header__container, .blocks-wrap {
+.page-header__container {
     display: flex;
     align-items: center;
 
@@ -16,15 +16,53 @@
     }
 }
 
+.blocks-wrap {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    background-color: $primary-white-color;
+
+    &--is-open {
+        display: block;
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+        @include centered-flex ();
+        flex-grow: 1;
+    }
+}
+
 .menu-btn {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 15px;
+
     display: inline-flex;
     margin: 0;
     padding: 0;
+
     border: none;
     background-color: transparent;
 
     @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    &:hover .menu-btn__icon-cross, 
+    &:hover .menu-btn__icon-menu,
+    &:focus .menu-btn__icon-cross,
+    &:focus .menu-btn__icon-menu 
+    {
+        fill: $accent-color;
     }
 }
 

@@ -1,14 +1,4 @@
 .site-nav {
-    display: none;
-
-    @media screen and (max-width: 767px) {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: $primary-white-color;
-    }
-
     @media screen and (min-width: 768px) {
         display: flex;
         margin-left: 88px;
@@ -17,23 +7,13 @@
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
     }
-
-    &--is-open {
-        display: block;
-    }
-}
-
-.site-nav__item {
-    @media screen and (max-width:767px) {
-        margin-left: 40px;
-        
-    &+& {
-        margin-top: 32px;
-    }
-    }
 }
 
 .site-nav__item+.site-nav__item {
+    @media screen and (max-width:767px) {
+        margin-top: 32px;
+    }
+
     @media screen and (min-width: 768px) {
         margin-left: 50px;
     }
