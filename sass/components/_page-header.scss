@@ -7,11 +7,12 @@
 }
 
 .page-header__container {
+    position: relative;
     display: flex;
     align-items: center;
 
     @media screen and (max-width: 767px) {
-        width: 100%;
+        // width: 100%;
         justify-content: space-between;
     }
 }
@@ -38,6 +39,11 @@
     @media screen and (min-width: 768px) {
         @include centered-flex ();
         flex-grow: 1;
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
     }
 }
 
